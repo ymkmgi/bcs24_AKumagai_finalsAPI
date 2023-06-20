@@ -1,0 +1,75 @@
+// register
+/users
+{
+    "email": "yumikumagai3@gmail.com",
+    "username": "ykgi",
+    "password": "admin123",
+    "isAdmin": true
+}
+
+// login
+users/login
+{
+    "username": "ykgi",
+    "password": "admin123"
+}
+
+{
+    "username": "smmr",
+    "password": "wow"
+}
+
+// add products
+/items
+{
+    "name": "Pearl White Soap Bar",
+    "description": "Whitening soap enriched with pearl extracts",
+    "price": 79.99,
+    "isActive": true
+}
+
+// update product information
+{
+  "description": ""
+}
+
+// update product quantity
+{
+  "quantity": 
+}
+
+// create order
+order
+{
+    "products": "Herbal Essence Shower Gel",
+    "quantity": 5
+}
+
+// example
+{
+    "name": "Herbal Essence Shower Gel",
+    "description": "Refreshing shower gel infused with natural herbs",
+    "price": 199.99,
+    "isActive": true
+}
+
+{
+    "name": "Coco Loco Body Wash",
+    "description": "Exotic coconut-scented body wash for a tropical shower experience",
+    "price": 149.50,
+    "isActive": false
+}
+
+{
+    "name": "Pearl White Soap Bar",
+    "description": "Whitening soap enriched with pearl extracts for a radiant complexion",
+    "price": 79.99,
+    "isActive": true
+}
+
+{
+    "name": "Citrus Burst Shower Scrub",
+    "description": "Invigorating shower scrub with citrus extracts for a refreshing cleanse",
+    "price": 129.00,
+    "isActive": true
+}
