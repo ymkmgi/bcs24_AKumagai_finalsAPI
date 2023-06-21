@@ -236,7 +236,7 @@ app.post('/order', (req, res) => {
     }
 });
 
-// Get added products
+// Get authenticated user's orders
 app.get('/cart/products', (req, res) => {
     if (loggedUser) {
         // Find the orders belonging to the logged-in user
@@ -349,17 +349,6 @@ app.get('/order/allOrders', (req, res) => {
         res.send(orders);
     } else {
         res.send('Unathorized. Non-admin user. Action Forbidden');
-    }
-});
-
-// get authenticated user's orders
-app.get('/order/userOrder', checkLoggedIn, (req, res) => {
-    if (loggedUser.isAdmin === true) {
-        // Filter the orders based on the user's email
-        const userOrders = orders.filter(order => order.email === loggedUser.email);
-        res.send(userOrders);
-    } else {
-        res.status(403).send('Unauthorized. Action Forbidden.');
     }
 });
 
